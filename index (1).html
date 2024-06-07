@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Intro to Javascript</title>
+		<script>
+			function add2Numbers()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML = num1 + num2;
+			}
+			function avarage()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 + num2 ) / 2.0;
+			}
+			function product()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 * num2 ) * 1.0;
+			}function difference()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 - num2 ) * 1.0;
+			}
+			function division()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				document.getElementById("result").innerHTML =  ( num1 / num2 ) * 1.0;
+			}
+			function potenzieren ()
+			{
+				var num1 = document.getElementById("fnum1").value * 1.0;
+				var num2 = document.getElementById("fnum2").value * 1.0;
+				
+				document.getElementById("result").innerHTML = Math.pow( num1, num2 ) * 1.0;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="my heading">
+			We're going to calculate
+		</h1>
+		<p>
+			<form>
+				<label for="fnum1">Erste Zahl:</label>
+				<input type="text" id="fnum1" name="fnum1"><br><br>
+				<label for="fnum2">Zweite Zahl:</label>
+				<input type="text" id="fnum2" name="fnum2"><br><br>
+			</form> 
+		</p>
+		<button onclick="add2Numbers()">
+			addition
+		</button>
+		<button onclick="avarage()">
+			avarage
+		</button>
+		<button onclick="product()">
+			product
+		</button>
+		<button onclick="difference()">
+			difference
+		</button>
+		<button onclick="division()">
+			division
+		</button>
+		<button onclick="potenzieren()">
+			potenzieren
+		</button>
+		<p id="result" >
+		</p>
+	</body>
+</html>
